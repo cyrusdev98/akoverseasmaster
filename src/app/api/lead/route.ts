@@ -55,3 +55,31 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }
+
+
+export async function GET(req: Request) {
+  const { searchParams } = new URL(req.url);
+  const key = searchParams.get("key");
+
+  // Protect the API
+  if (key !== process.env.ADMIN_API_KEY) {
+    return NextResponse.json(
+      { error: "Unauthorized" },
+      { status: 401 }
+    );
+  }
+
+  try {
+    const leads = await prisma.lead.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+
+    return NextResponse.json(leads);
+  } catch (error) {
+    console.error("GET leads error:", error);
+    return NextResponse.json(
+      { error: "Something went wrong" },
+      { status: 500 }
+    );
+  }
+}

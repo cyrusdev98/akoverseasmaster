@@ -6,7 +6,11 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "AK Overseas",
   description: "Travel & visa services",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
