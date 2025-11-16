@@ -7,7 +7,7 @@ export default function HomePage() {
           <i className="fa-solid fa-comments" />
         </button>
         <div id="fabMenu" className="fab-menu" role="menu" aria-label="Chat options">
-          <a className="fab-item fab-whatsapp" href="https://wa.me/919205049004?text=Hi%20KN%20Overseas%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener" role="menuitem" aria-label="WhatsApp chat">
+          <a className="fab-item fab-whatsapp" href="https://wa.me/919205049004?text=Hi%20AK%20Overseas%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener" role="menuitem" aria-label="WhatsApp chat">
             <i className="fa-brands fa-whatsapp" />
           </a>
           <a className="fab-item fab-phone" href="tel:+919205049004" role="menuitem" aria-label="Call us">
