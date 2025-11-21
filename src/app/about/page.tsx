@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "About AK Overseas – Travel, Visa & Import-Export Experts",
+  description:
+    "Learn about AK Overseas, our journey, mission, and commitment to providing reliable visa services, travel planning, passport assistance, and import-export documentation support.",
+};
+
+
 export default function AboutPage() {
   return (
     <main className="about-page">
@@ -32,6 +39,7 @@ export default function AboutPage() {
               <li className="navitem"><a href="/about">About Us</a></li>
               <li className="navitem"><a href="/#reviews">Testimonials</a></li>
               <li className="navitem"><a href="/#contact">Contact Us</a></li>
+              <li className="navitem"><a href="tel:+919205049004">+91-92050 49004</a></li>
             </ul>
           </nav>
           <div id="hero-text"><h1>About Us</h1></div>
@@ -43,9 +51,27 @@ export default function AboutPage() {
           <div className="about-grid">
             <div className="about-text">
               <h2 className="about-title">About AK Overseas</h2>
-              <p>Welcome to <b>AK Overseas</b>, your trusted partner in the world of travel and visas…</p>
-              <p>Over time, AK Overseas has grown into a comprehensive brand—recognized for <a className="mark" href="#">Visa Services</a>, <a className="mark" href="#">Flight Tickets</a>, <a className="mark" href="#">Travel Insurance</a>, holiday packages, passport assistance, and many more.</p>
-              <p>Our dedicated team is passionate about assisting you at every step of your travel journey.</p>
+              <p>
+                Welcome to <b>AK Overseas</b>, your trusted partner for travel, visas, and
+                international import–export support. What started as a simple travel assistance
+                desk has grown into a brand known for reliability, transparency, and end-to-end guidance.
+              </p>
+
+              <p>
+                Over time, AK Overseas has expanded into a comprehensive service provider—offering
+                <a className="mark" href="/#contact">Visa Services</a>,
+                <a className="mark" href="/#contact">Flight Tickets</a>,
+                <a className="mark" href="/#contact">Travel Insurance</a>,
+                holiday packages, passport assistance, and now
+                <a className="mark" href="/#contact">Import & Export Services</a> including documentation, customs
+                clearance, DGFT support, logistics planning, and shipment coordination.
+              </p>
+
+              <p>
+                Our dedicated team ensures smooth processing—whether you are planning an international
+                trip or handling business shipments. With AK Overseas, you get clear guidance, honest
+                communication, and complete support from start to finish.
+              </p>
               <a href="/#contact" className="about-btn">Apply Now</a>
               <span className="about-doodle" />
             </div>

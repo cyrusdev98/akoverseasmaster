@@ -24,10 +24,11 @@ export default function Footer() {
         <div className="kf-col kf-about">
           <h4 className="kf-title">About Company</h4>
           <p>
-            Welcome to <strong>AK Overseas</strong>, your trusted partner in the world of travel
-            and visas. With a commitment to excellence and customer satisfaction, we have been
-            serving travelers’ needs for years.
+            Welcome to <strong>AK Overseas</strong>, your trusted partner for travel, visa, and import–export services.
+            With a commitment to excellence and customer satisfaction, we have proudly assisted thousands of clients
+            with seamless journeys, smooth documentation, and reliable international trade support.
           </p>
+
 
           <div className="kf-social">
             <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" style={{ color: "black" }} /></a>
@@ -41,6 +42,7 @@ export default function Footer() {
           <h4 className="kf-title">Quick Links</h4>
           <ul className="kf-links">
             <li><a href="/#hero">Home</a></li>
+            <li><a href="/#contact">Imports &amp; Exports</a></li>
             <li><a href="/#whatwedo">Company</a></li>
             <li><a href="/#services">Our Services</a></li>
             <li><a href="/#services">Visa Services</a></li>
@@ -54,6 +56,7 @@ export default function Footer() {
         <div className="kf-col">
           <h4 className="kf-title">Services</h4>
           <ul className="kf-links">
+            <li><a href="/#services">Imports &amp; Exports</a></li>
             <li><a href="/#services">Visa Services</a></li>
             <li><a href="/#services">Holiday Packages</a></li>
             <li><a href="/#services">Flight Ticket</a></li>

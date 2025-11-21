@@ -89,8 +89,12 @@ nav.scrolled {
 }
 
 #logo {
-    font-size: 25px;
-    color: white;
+    background-color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 4px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px black;
 }
 
 #hero {
@@ -103,7 +107,7 @@ nav.scrolled {
 
 #hero-text {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #hero-text h2 {

@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "AK Overseas – Visa, Travel & Import-Export Services",
+  description:
+    "AK Overseas offers visa assistance, travel services, passport guidance, holiday packages, and complete import-export documentation and logistics support. Trusted partner for smooth, reliable service.",
+};
+
+
 export default function HomePage() {
   return (
     <>
@@ -29,16 +36,16 @@ export default function HomePage() {
 
         <div id="hero-content">
           <nav className="scrolled">
-            <div id="logo"><h1>AK Overseas</h1></div>
+            <div><img src="/images/logo.png" alt="logo" id="logo" /></div>
             <button className="nav-toggle" aria-label="Toggle menu" aria-controls="navitems" aria-expanded={false}>
               <i className="fa-solid fa-bars" />
               <i className="fa-solid fa-xmark" />
             </button>
             <ul id="navitems">
               <li className="navitem"><a href="#">Home</a></li>
+              <li className="navitem"><a href="#contact">Import &amp; Exports</a></li>
               <li className="navitem"><a href="#services">Our Services</a></li>
               <li className="navitem"><a href="/about">About Us</a></li>
-              <li className="navitem"><a href="#reviews">Testimonials</a></li>
               <li className="navitem"><a href="#contact">Contact Us</a></li>
               {/* <li className="navitem"><a href="mailto:info@akoverseas.co.in">info@akoverseas.co.in</a></li> */}
               <li className="navitem"><a href="tel:+919205049004">+91-92050 49004</a></li>
@@ -46,7 +53,7 @@ export default function HomePage() {
           </nav>
 
           <div id="hero-text">
-            <h1>Travel Beyond Expectations</h1>
+            <h1>Serving Travel, Visa &amp; Import-Export Solutions</h1>
             <h2>Dream. Decide. Depart.</h2>
             <a href="#contact">
               <button className="btn" id="hero-btn">
@@ -77,10 +84,21 @@ export default function HomePage() {
         <div id="whatwetext">
           <div id="offer-main">
             <h2>What we Offer</h2>
-            <p>Welcome to AK Overseas, your reliable partner in travel and visa solutions. Dedicated to delivering excellence and ensuring customer satisfaction, we have proudly supported travelers for many years.</p>
-            <p>Our story started with a mission to make the visa process straightforward and accessible, helping people explore the world with ease. Today, Newland Travel is recognized globally for its expertise in visa processing, passport services, and tailor-made travel experiences.</p>
+            <p>
+              Welcome to <strong>AK Overseas</strong>, your reliable partner in travel, visa, and import–export solutions.
+              Dedicated to delivering excellence and ensuring customer satisfaction, we have proudly supported clients
+              and travelers for many years.
+            </p>
+
+            <p>
+              Our journey began with a mission to make the visa process simple and accessible for everyone.
+              Over time, <strong>AK Overseas</strong> expanded its expertise into passport services, customized travel
+              planning, and now import–export assistance—helping individuals and businesses navigate documentation,
+              compliance, logistics, and global shipments with confidence.
+            </p>
             <h2>Our Services</h2>
             <ul id="service-list">
+              <li>✅ Imports &amp; Exports</li>
               <li>✅ Visa Assistance</li>
               <li>✅ Vacation Packages</li>
               <li>✅ Study Abroad Guidance</li>
@@ -106,6 +124,19 @@ export default function HomePage() {
         <div id="service-title"><h2>Our Services</h2></div>
 
         <div className="svc-grid blur-bg">
+
+          <article className="svc-card" data-title="Import & Export Services">
+            <img src="/images/importandexport.jpg" alt="Import & Export Services" className="svc-thumb" />
+            <div className="svc-body">
+              <h3 className="svc-name">Import & Export Services</h3>
+              <p className="svc-snippet">
+                Complete support for import/export documentation, customs clearance, logistics & international shipments.
+              </p>
+              <a href="#" className="svc-more" data-target="#full-importexport">View more</a>
+            </div>
+          </article>
+
+
           <article className="svc-card" data-title="Visa Services">
             <img src="/images/visa.png" alt="Visa Services" className="svc-thumb" />
             <div className="svc-body">
@@ -123,6 +154,9 @@ export default function HomePage() {
               <a href="#" className="svc-more" data-target="#full-holiday">View more</a>
             </div>
           </article>
+
+
+
 
           <article className="svc-card" data-title="Travel Insurance">
             <img src="/images/insurance.jpg" alt="Travel Insurance" className="svc-thumb" />
@@ -182,6 +216,30 @@ export default function HomePage() {
           <p>Enjoy competitive pricing and transparent reviews to help you make informed decisions. Your bookings are secure, and your personal information is protected.</p>
           <p>Choose AK Overseas for seamless hotel reservations that perfectly complement your travel.</p>
         </div>
+
+        <div id="full-importexport" className="svc-hidden" hidden>
+          <p>
+            AK Overseas provides complete Import & Export support for individuals and businesses,
+            ensuring smooth international trade with clear documentation and reliable guidance.
+          </p>
+
+          <p>
+            We specialize in exporting a wide range of products including <b>Leather Goods</b>,
+            <b>GI Items</b>, <b>Leather Bags</b>, <b>Wallets</b>, <b>Leather Journals</b>,
+            <b>Laptop Bags</b>, <b>Key Rings</b>, <b>Wooden Handicraft</b>,
+            <b>Vintage Handicraft Items</b>, <b>Gramophones</b>, <b>Telescopes</b>,
+            <b>Wooden Journals</b>, and many more unique handcrafted products.
+          </p>
+
+          <p>
+            Our import-export services include customs clearance, HS code guidance, DGFT documentation,
+            IEC assistance, logistics coordination, and compliance verification to ensure smooth and
+            hassle-free shipment handling. Whether you’re exporting handcrafted goods or importing
+            commercial products, AK Overseas makes the entire process simple, transparent, and efficient.
+          </p>
+        </div>
+
+
       </section>
 
       {/* POPULAR DESTINATIONS */}
@@ -195,11 +253,11 @@ export default function HomePage() {
           <div className="pc-viewport">
             <div id="city-carousel" className="pc-track">
               {[
-                ["dubai","Dubai"],["singapore","Singapore"],["bangkok","Bangkok"],["bali","Bali"],
-                ["paris","Paris"],["london","London"],["rome","Rome"],["barcelona","Barcelona"],
-                ["istanbul","Istanbul"],["amsterdam","Amsterdam"],["zurich","Zurich"],["tokyo","Tokyo"],
-                ["seoul","Seoul"],["newyork","New York"],["sydney","Sydney"],["kualalumpur","Kuala Lumpur"]
-              ].map(([img,label])=>(
+                ["dubai", "Dubai"], ["singapore", "Singapore"], ["bangkok", "Bangkok"], ["bali", "Bali"],
+                ["paris", "Paris"], ["london", "London"], ["rome", "Rome"], ["barcelona", "Barcelona"],
+                ["istanbul", "Istanbul"], ["amsterdam", "Amsterdam"], ["zurich", "Zurich"], ["tokyo", "Tokyo"],
+                ["seoul", "Seoul"], ["newyork", "New York"], ["sydney", "Sydney"], ["kualalumpur", "Kuala Lumpur"]
+              ].map(([img, label]) => (
                 <div className="carousel-card" key={label}>
                   <img src={`/images/${img}.jpg`} alt={label} className="city-img" />
                   <p>{label}</p>
@@ -219,27 +277,71 @@ export default function HomePage() {
         <div className="top-cards">
           <article className="info-card">
             <h3 className="info-title">Our Vision</h3>
-            <p className="info-text">At <b>AK Overseas</b>, our vision is to be India’s most dependable travel & visa partner—a place where people feel informed, confident, and calm as their application moves forward.</p>
+            <p className="info-text">
+              At <b>AK Overseas</b>, our vision is to be India’s most dependable partner for
+              travel, visa, and import–export guidance—ensuring people feel confident, supported,
+              and stress-free as their journeys or shipments move forward.
+            </p>
           </article>
+
           <article className="info-card">
             <h3 className="info-title">Our Mission</h3>
-            <p className="info-text">We guide every client with clear steps, fast replies, and friendly support—so <b>AK Overseas</b> is your first choice for visas and travel planning, with fair, transparent pricing.</p>
+            <p className="info-text">
+              We deliver clear steps, expert assistance, and quick support for every client—whether
+              they need visa processing, travel planning, or import–export documentation.
+              Our mission is to provide transparent, reliable services that make <b>AK Overseas</b>
+              your trusted choice for both travel and trade solutions.
+            </p>
           </article>
+
         </div>
 
         <div className="why-wrap">
-          <div className="why-img"><img src="/images/why-choose-us.jpg" alt="Team assisting clients with visa documents" /></div>
+          <div className="why-img">
+            <img src="/images/why-choose-us.jpg" alt="Team assisting clients with visas and import-export documentation" />
+          </div>
+
           <div className="why-text">
-            <h2 className="why-title">Why Choose Us for Your Visa & Travel Needs?</h2>
-            <p className="why-intro">Planning international travel can be exciting—and confusing. <b>AK Overseas</b> keeps it simple. Our focused process and reliable timelines let you relax while we handle the details.</p>
+            <h2 className="why-title">Why Choose Us for Travel, Visa & Import–Export Services?</h2>
+
+            <p className="why-intro">
+              Whether you're planning an international trip or handling import–export documentation,
+              <b> AK Overseas </b> keeps everything simple. Our clear processes, reliable timelines,
+              and expert support help you stay confident and stress-free.
+            </p>
+
             <ul className="points">
-              <li><span className="tick" aria-hidden="true" /><div className="point-body"><b>Proven Expertise:</b> We’ve supported thousands of applicants—delivering memorable trips and solid results.</div></li>
-              <li><span className="tick" aria-hidden="true" /><div className="point-body"><b>Tailored Plans:</b> Family, business, study, solo—we build itineraries that fit your goals and documents.</div></li>
-              <li><span className="tick" aria-hidden="true" /><div className="point-body"><b>Visa Made Simple:</b> Clear checklists, appointment support, and document reviews reduce rework.</div></li>
-              <li><span className="tick" aria-hidden="true" /><div className="point-body"><b>Responsive Team:</b> Quick answers on calls and chat, friendly updates at every step.</div></li>
+              <li>
+                <span className="tick" aria-hidden="true" />
+                <div className="point-body">
+                  <b>Proven Expertise:</b> Thousands of clients trust us for visa approvals, travel planning, and smooth import–export handling.
+                </div>
+              </li>
+
+              <li>
+                <span className="tick" aria-hidden="true" />
+                <div className="point-body">
+                  <b>Tailored Plans:</b> Whether it’s family travel or exporting goods, we customise solutions based on your goals and requirements.
+                </div>
+              </li>
+
+              <li>
+                <span className="tick" aria-hidden="true" />
+                <div className="point-body">
+                  <b>End-to-End Support:</b> From visa checklists to customs documentation and shipment coordination—we guide you through every step.
+                </div>
+              </li>
+
+              <li>
+                <span className="tick" aria-hidden="true" />
+                <div className="point-body">
+                  <b>Responsive Team:</b> Quick updates, fast communication, and friendly assistance make your experience smooth and reliable.
+                </div>
+              </li>
             </ul>
           </div>
         </div>
+
       </section>
 
       {/* CONTACT (form wired by /public/app.js) */}
@@ -258,6 +360,7 @@ export default function HomePage() {
               <div className="select-wrap">
                 <select className="select" name="service" aria-label="Select Services" defaultValue="">
                   <option value="" disabled>Select Services</option>
+                  <option>Imports &amp; Exports</option>
                   <option>Tour Packages</option>
                   <option>Flight Booking</option>
                   <option>Visa Assistance</option>
@@ -322,25 +425,50 @@ export default function HomePage() {
         <div className="reviews-viewport" id="reviewsViewport">
           <ul className="reviews-track" id="reviewsTrack">
             {[
-              ["I had a very smooth experience with AK Overseas. The team guided me clearly for my Schengen work visa and kept me updated at every step.","Sai Kumar Reddy (Andhra Pradesh)"],
-              ["Thanks to AK Overseas for my Finland residence permit. Documents were checked thoroughly and I got approval in just 3 days.","Pranitha Chowdary (Telangana)"],
-              ["Wonderful guidance for our family visas to Australia & Thailand. They even helped with address change in my child’s passport.","Ravi Teja (Andhra Pradesh)"],
-              ["Got France visa exactly on the committed timeline. Transparent process and cooperative team at AK Overseas.","Shravani Goud (Telangana)"],
-              ["My Canada study visa filing was stress-free. SOP, mock interviews and college shortlist were all on point.","Charan Kalyan (Andhra Pradesh)"],
-              ["I approached them for UK business visa. Checklist was perfect and appointments well managed. Approved in first attempt!","Lavanya Reddy (Telangana)"],
-              ["For my Dubai trip, they arranged visa, flights and hotel with zero last-minute issues. Very fair pricing.","Anil Kumar (Andhra Pradesh)"],
-              ["Excellent support for my Schengen tourist visa. Quick responses and detailed document checks. Timelines respected.","Deepika Shetty (Telangana)"]
-            ].map(([t,n],i)=>(
-              <li className="review" key={i}>
-                <figure className="review-wrap">
-                  <div className="card">
-                    <p className="text">{t}</p>
-                    <div className="stars" aria-hidden="true">★★★★★</div>
-                  </div>
-                  <figcaption className="name">{n}</figcaption>
-                </figure>
-              </li>
-            ))}
+              [
+                "AK Overseas handled my Schengen tourist visa smoothly. Clear checklist, timely updates and zero rework in documents.",
+                "Rohan Verma (Delhi)"
+              ],
+              [
+                "Their team helped us export home décor products to the UK. HS code guidance and customs documentation were perfect.",
+                "Pooja Menon (Hyderabad)"
+              ],
+              [
+                "My Finland residence permit process was handled very professionally. I received guidance at every step.",
+                "Sarah Khan (Bangalore)"
+              ],
+              [
+                "I booked my Dubai trip with them—visa, flights and hotel arrangements were all seamless and budget-friendly.",
+                "Aditya Nair (Mumbai)"
+              ],
+              [
+                "AK Overseas supported my Canada study visa filing. SOP editing and college suggestions were extremely helpful.",
+                "Karthik Rao (Chennai)"
+              ],
+              [
+                "They arranged complete import documentation for my machinery shipment from Germany. Smooth clearance.",
+                "Sandeep Kulkarni (Pune)"
+              ],
+              [
+                "Perfect assistance for my UK business visa. Appointment support and document reviews were spot on.",
+                "Neha Sharma (Kolkata)"
+              ],
+              [
+                "Great support for our family trip to Singapore. They handled tickets, itinerary and visa filings without any delay.",
+                "Vishal Reddy (Hyderabad)"
+              ]
+            ]
+              .map(([t, n], i) => (
+                <li className="review" key={i}>
+                  <figure className="review-wrap">
+                    <div className="card">
+                      <p className="text">{t}</p>
+                      <div className="stars" aria-hidden="true">★★★★★</div>
+                    </div>
+                    <figcaption className="name">{n}</figcaption>
+                  </figure>
+                </li>
+              ))}
           </ul>
         </div>
       </section>
